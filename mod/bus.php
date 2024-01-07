@@ -1,15 +1,15 @@
 <?php
 class bus{
-    
+        
         private $immat;
         private $num_bus;
         private $capacité;
         private $entreprise;
 
-        public function __construct($name,$email,$password){
+        public function __construct($immat,$num_bus,$capacité,$entreprise){
           $this->immat = $immat;
           $this->num_bus = $num_bus;
-          $this->capacite = $capacité;
+          $this->capacité = $capacité;
           $this->entreprise = $entreprise; 
         }
 

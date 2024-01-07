@@ -1,23 +1,17 @@
 <?php
 
-class entreprise{
-    private $id;
+class Entreprise{
+  
     private $name_entreprise;
     private $image;
 
-    public function __construct($id,$name_entreprise,$image){
-        $this->id = $id;
+    public function __construct($name_entreprise,$image){
+     
         $this->name_entreprise = $name_entreprise;
         $this->image = $image;
     }
 
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
+  
 
     /**
      * Get the value of name_entreprise

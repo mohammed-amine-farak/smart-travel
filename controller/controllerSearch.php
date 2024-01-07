@@ -5,11 +5,11 @@
 
 class contoller_city {
 
-    function getvilles()  {
+  function getvilles()  {
         
    $villeDAO = new VilleDAO() ;
    $villes = $villeDAO->getVilles();
-
+   
    include 'vue\searchform.php' ; 
 
 

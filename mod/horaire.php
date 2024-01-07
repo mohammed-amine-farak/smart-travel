@@ -1,25 +1,24 @@
 <?php
-class hraire
+class horaire
 {
 
-private $id_hor
-private $heure_dep
-private $heure_arri
-private $sieg_dispo
-private $date_
-private $fk_bus
-private $fk_vil_dep
-private $fk_vil_arv
+private $id_hor;
+private $heure_dep;
+private $heure_arri;
+private $sieg_dispo;
+private $date_;
+private $fk_bus;
+private $fk_route;
 
-public function __construct($id_hor,$heure_dep,$heure_arri,$sieg_dispo,$date_,$fk_bus,$fk_vil_arv,$fk_vil_dep){
+public function __construct($id_hor,$heure_dep,$heure_arri,$sieg_dispo,$date_,$fk_bus,$fk_route){
       $this->id_hor = $id_hor;
       $this->heure_dep = $heure_dep;
       $this->heure_arri = $heure_arri;
       $this->sieg_dispo = $sieg_dispo;
       $this->date = $date_;
       $this->bus = $fk_bus;
-      $this->vil_dep = $fk_vil_dep;
-      $this->vill_arv = $fk_vil_arv;
+      $this->fk_route = $fk_route;
+     
 }
 
 
@@ -71,20 +70,14 @@ public function getFk_bus()
 return $this->fk_bus;
 }
 
-/**
- * Get the value of fk_vil_dep
- */ 
-public function getFk_vil_dep()
-{
-return $this->fk_vil_dep;
-}
+
 
 /**
- * Get the value of fk_vil_arv
+ * Get the value of fk_route
  */ 
-public function getFk_vil_arv()
+public function getFk_route()
 {
-return $this->fk_vil_arv;
+return $this->fk_route;
 }
 }
 ?>

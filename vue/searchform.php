@@ -45,7 +45,6 @@
                 foreach($villes as $ville){
                 
                     echo "<option value=".$ville->getNom_ville().">".$ville->getNom_ville()."</option>";
-                
                 }
                
                 ?>
